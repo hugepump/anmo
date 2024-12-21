@@ -1,0 +1,70 @@
+{
+    "name": "topthink/think",
+    "description": "the new thinkphp framework",
+    "type": "project",
+    "keywords": [
+        "framework",
+        "thinkphp",
+        "ORM"
+    ],
+    "homepage": "http://thinkphp.cn/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "liu21st",
+            "email": "liu21st@gmail.com"
+        },
+        {
+            "name": "yunwuxin",
+            "email": "448901948@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-orm": "^2.0",
+        "antchain/twc": "^1.7",
+        "alibabacloud/sdk": "^1.8",
+        "alibabacloud/darabonba-openapi": "^0.2.8",
+        "alibabacloud/dyplsapi-20170525": "1.0.5",
+        "topthink/think-multi-app": "^1.0",
+        "topthink/think-view": "^1.0",
+        "ramsey/uuid": "^3.9",
+        "alibabacloud/dyvmsapi-20170525": "^2.1",
+        "alipaysdk/easysdk": "^2.0",
+        "alibabacloud/green": "^1.8",
+        "tp5er/tp5-databackup": "dev-master",
+        "wechatpay/wechatpay": "^1.4",
+        "wechatpay/wechatpay-guzzle-middleware": "^0.2.2",
+        "geoip2/geoip2": "~2.0",
+        "geocoder/geocoder": "^1.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "topthink/think-trace":"^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app",
+            "longbingcore\\": "longbingcore"
+        },
+        "psr-0": {
+            "": "extend/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php think service:discover",
+            "@php think vendor:publish"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}

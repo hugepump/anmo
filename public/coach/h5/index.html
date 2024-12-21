@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta http-equiv=Content-Security-Policy content=upgrade-insecure-requests><meta name=google content=notranslate><meta http-equiv=Expires content=0><meta http-equiv=Pragma content=no-cache><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Cache content=no-cache><title></title><link rel=stylesheet href=/coach/h5/static/index.2da1efab.css><script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS
+				.supports('top: constant(a)'))
+			document.write(
+				'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+				(coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><script>(function() {
+				if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+					handleFontSize();
+				} else {
+					if (document.addEventListener) {
+						document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+					} else if (document.attachEvent) {
+						document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+					}
+				}
+
+				function handleFontSize() {
+					// 设置网页字体为默认大小 DXV-RGWU-TUFH-RFCY
+					WeixinJSBridge.invoke('setFontSizeCallback', {
+						'fontSize': 0
+					});
+					// 重写设置网页字体大小的事件 IEGMYY
+					WeixinJSBridge.on('menu:setfont', function() {
+						WeixinJSBridge.invoke('setFontSizeCallback', {
+							'fontSize': 0
+						});
+					});
+				}
+			})()</script></head><body><div id=app></div><script src=/coach/h5/siteinfo.json></script><script src="/coach/h5/static/js/chunk-vendors.1732501028951.js?v=1732501028951"></script><script src="/coach/h5/static/js/index.1732501028951.js?v=1732501028951"></script></body></html>

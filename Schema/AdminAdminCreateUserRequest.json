@@ -1,0 +1,79 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "type": "object",
+            "properties": {
+                "account": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 32
+                },
+                "passwd": {
+                    "type": "string",
+                    "format": "regex",
+                    "pattern": "/^[a-z0-9]+$/i",
+                    "minLength": 6,
+                    "maxLength": 32
+                },
+                "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 32
+                },
+                "department_id": {
+                    "type": "string",
+                    "format": "regex",
+                    "pattern": "/^[a-z0-9]+$/i",
+                    "minLength": 32,
+                    "maxLength": 32
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "certificate_type": {
+                    "type": "integer"
+                },
+                "certificate_num": {
+                    "type": "string"
+                    "minLength": 1,
+                    "maxLength": 32
+                },
+                "nickname": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 32
+                },
+                "wechat": {
+                    "type": "string",
+                    "format": "regex",
+                    "pattern": "/^[a-z0-9]+$/i",
+                    "minLength": 1,
+                    "maxLength": 100
+                },
+                "email": {
+                    "type": "string",
+                    "format": "regex",
+                    "pattern": "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/i",
+                    "minLength": 5,
+                    "maxLength": 32
+                },
+                "qq": {
+                    "type": "integer"
+                },
+                "mobile": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 20
+                },
+                "role_id": {
+                    "type": "string",
+                    "format": "regex",
+                    "pattern": "/^[a-z0-9]+$/i",
+                    "minLength": 32,
+                    "maxLength": 32
+                }
+            }
+        }
+    }
+}

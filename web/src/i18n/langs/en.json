@@ -1,0 +1,26 @@
+{
+    "common":{
+        "login":"Login",
+        "logout":"Logout",
+        "exit":"Exit"
+    },
+    "action":{
+        "operation": "Operation",
+        "view":"View",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "batchDelete": "Batch Delete",
+        "search": "Search",
+        "loading": "loading",
+        "submit": "Submit",
+        "comfirm": "Comfirm",
+        "cancel": "Cancel",
+        "reset": "Reset",
+        "save": "Save"
+    },
+    "menu":{
+        "set":"Business Card Set",
+        "businessCard": "Business Card"
+    }
+}

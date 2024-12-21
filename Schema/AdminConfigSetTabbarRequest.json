@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "data": {
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 20,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "menu_name": {
+                        "type": "string",
+                        "minLength": 0,
+                        "maxLength": 32
+                    },
+                    "is_show": {
+                        "type": "integer",
+                        "default": 0,
+                        "minimum": 0,
+                        "maximum": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "pattern": "\/^[a-z0-9]+$\/i",
+                        "minLength": 0,
+                        "maxLength": 20
+                    },
+                    "url": {
+                        "type": "string",
+                        "pattern": "\/^[a-z0-9]+$\/i",
+                        "minLength": 0,
+                        "maxLength": 500
+                    },
+                    "url_out": {
+                        "type": "string",
+                        "pattern": "\/^[a-z0-9]+$\/i",
+                        "minLength": 0,
+                        "maxLength": 500
+                    },
+                    "url_jump_way": {
+                        "type": "integer",
+                        "default": 0,
+                        "minimum": 0,
+                        "maximum": 999
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,416 @@
+{
+	"type": "object",
+	"properties": {
+		"app_config": {
+			"type": "object",
+			"properties": {
+				"multi": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"create_time": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"update_time": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"show_card": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"copyright": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"mini_template_id": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"mini_app_name": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 30
+				},
+				"status": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"allow_create": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"create_text": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"logo_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"logo_text": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"logo_phone": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 20
+				},
+				"notice_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"notice_i": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 9999999999
+				},
+				"min_tmppid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"order_overtime": {
+					"type": "integer",
+					"default": 1800,
+					"minimum": 0,
+					"maximum": 9999999999
+				},
+				"collage_overtime": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 9999999999
+				},
+				"force_phone": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"staff_extract": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"first_extract": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 3
+				},
+				"sec_extract": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"code": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 20
+				},
+				"corpid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"corpsecret": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"agentid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"wx_appid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"wx_tplid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"redis_pas": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"cash_mini": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 9999999999
+				},
+				"admin_account": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 100
+				},
+				"plug_form": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"btn_consult": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 20
+				},
+				"btn_sale": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 20
+				},
+				"btn_code_err": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"btn_code_miss": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"preview_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 9999
+				},
+				"btn_talk": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 20
+				},
+				"receiving": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 9999999999
+				},
+				"ios_pay": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"android_pay": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"self_text": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"default_video": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"default_voice": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"card_type": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"order_pwd": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"exchange_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"motto_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"default_voice_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"myshop_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"aliyun_sms_access_key_id": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 50
+				},
+				"aliyun_sms_access_key_secret": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 50
+				},
+				"default_shop_name": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"default_shop_pic": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"default_video_cover": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"appoint_pic": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"appoint_name": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"click_copy_way": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"click_copy_show_img": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"click_copy_content": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 500
+				},
+				"question_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 1
+				},
+				"question_text": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 200
+				},
+				"shop_version": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"shop_carousel_more": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 300
+				},
+				"exchange_btn": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"my_shop_limit": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 9999999999
+				},
+				"autograph": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"signature": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"vr_tittle": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 50
+				},
+				"vr_cover": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 300
+				},
+				"vr_path": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 300
+				},
+				"vr_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"qr_avatar_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"coupon_pass": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 99999999999
+				},
+				"auto_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"auto_switch_way": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"job_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"appid": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"app_secret": {
+					"type": "string",
+					"minLength": 0,
+					"maxLength": 40
+				},
+				"chat_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				},
+				"auth_switch": {
+					"type": "integer",
+					"minimum": 0,
+					"maximum": 999
+				}
+			}
+		}
+	}
+}

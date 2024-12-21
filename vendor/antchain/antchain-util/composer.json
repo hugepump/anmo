@@ -1,0 +1,38 @@
+{
+  "name": "antchain/antchain-util",
+  "description": "Ant Chain Util Library for PHP",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [],
+  "require": {
+    "php": ">5.5",
+    "alibabacloud/tea": "^3.1",
+    "alibabacloud/tea-oss-utils": "^0.2.2",
+    "alibabacloud/tea-utils": "^0.2.12"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8.35|^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AntChain\\Util\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AntChain\\Util\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "fixer": "php-cs-fixer fix ./",
+    "test": [
+      "./vendor/bin/phpunit --colors=always"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "prefer-stable": true
+}

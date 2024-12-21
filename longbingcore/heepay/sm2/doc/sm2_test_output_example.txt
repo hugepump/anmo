@@ -1,0 +1,22 @@
+SM2密钥对生成测试
+
+private key: string(64) "550b1a390c47ed344bd026c3c3830139e7a1aed70f43830dcc8f615efad8019d"
+public key: string(130) "045fefd2c24e2bcba51ec08e30d6f65f8915c5b9f43d1ca5c26fb1f47d5381cf52877d6563afcbe7116e54fcbfd657cbd18a940f46eb0a14ddfc513dbf332488f2"
+SM2私钥签名验签测试
+
+message: To be signed message
+private key: string(64) "fcde55bd1cd084decd3ed03a205277fa2779146f99a5bf918be55f1f55cda0a4"
+public key: string(130) "04a14539132ba78440838e9952a363447acced34cf627761596c99191683c38c18fa4e54a57c5ee3704593d2c30801be53d50147abd872acd964be20e6514e1092"
+签名数据: string(140) "304402202d14d9110cdd877dcd911e7ca5da21203d8a05c459fc3e6900d1215670e61115022059349c06645edcd3d8c3891ca562ea6ea49de16e36326f03528fd1d64cd6a453"
+验签结果: bool(true)
+汇元公钥SM2验签测试
+
+汇元公钥 pkcs8 base64: MIIBMzCB7AYHKoZIzj0CATCB4AIBATAsBgcqhkjOPQEBAiEA/////v////////////////////8AAAAA//////////8wRAQg/////v////////////////////8AAAAA//////////wEICjp+p6dn140TVqeS89lCafzl4n1FauPkt28vUFNlA6TBEEEMsSuLB8ZgRlfmQRGajnJlI/jC7/yZgvhcVpFiTNMdMe8Nzai9PZ3nFm9zuNraSFT0KmHfMYqR0AC3zLlITnwoAIhAP////7///////////////9yA99rIcYFK1O79Ak51UEjAgEBA0IABChf5Gs11hyWHD4Tn0MfyZvHjd9L5XO3xz2cU/hmXb+YcL9lk4xKMC+VZ0JEx6Pm/oVjwcGBINUEgi05oyNj7+U=
+汇元公钥 hex串: 04285fe46b35d61c961c3e139f431fc99bc78ddf4be573b7c73d9c53f8665dbf9870bf65938c4a302f95674244c7a3e6fe8563c1c18120d504822d39a32363efe5
+
+汇元返回的json消息【带SM2签名】: { "msg": "无效参数", "code": 40002, "sub_msg": "参数【biz_content】无效,请传入json对象", "sub_code": "invalid_param", "sign": "jhs+CGKfo2htaq/VSzehsPdBjZ2UAy+i65FXS12xMlSsne/ZpKDicPvcWQPMyeAqvRFZb9pAntl+5sAPYaDwBA==" }
+变换成签名检查的格式: code=40002&msg=无效参数&sub_code=invalid_param&sub_msg=参数【biz_content】无效,请传入json对象
+汇元签名【base64格式】: jhs+CGKfo2htaq/VSzehsPdBjZ2UAy+i65FXS12xMlSsne/ZpKDicPvcWQPMyeAqvRFZb9pAntl+5sAPYaDwBA==
+汇元签名【转成HEX格式，长度为128】: 8e1b3e08629fa3686d6aafd54b37a1b0f7418d9d94032fa2eb91574b5db13254ac9defd9a4a0e270fbdc5903ccc9e02abd11596fda409ed97ee6c00f61a0f004
+调用convert_sign_rs_to_pkcs1转换成pkcs1的格式: 30460221008e1b3e08629fa3686d6aafd54b37a1b0f7418d9d94032fa2eb91574b5db13254022100ac9defd9a4a0e270fbdc5903ccc9e02abd11596fda409ed97ee6c00f61a0f004
+验签结果: bool(true)

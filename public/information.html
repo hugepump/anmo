@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>个人信息保护指引</title>
+		<style>
+			body {
+				padding: 20px 15px;
+				margin: 0;
+			}
+			p {
+				padding: 0px;
+				margin-block-start: 0px;
+				margin-block-end: 0px;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+			}
+			img{
+				  max-width: 100% !important;
+				  height: auto !important;
+				  display: block;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="html-box"></div>
+		<script src="/js/jquery-3.5.1.min.js"></script>
+		
+		<script>
+			let _href = window.location.href
+			let url = _href.split('/information.html')[0]
+			let ajax_url = `${url}/index.php?i=666&m=longbing_massages_city&s=index/getConfig`
+
+			$(function() {
+				$.ajax({
+					type: 'get',
+					url: `${ajax_url}`,
+					dataType: 'json',
+					async: false,
+					data: {},
+					success: function(res) {
+						let {
+							information_protection
+						} = res.data
+						$(".html-box").html(information_protection)
+					}
+				})
+			})
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+	"type": "object",
+	"properties": {
+		"data": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"minLength": 1,
+					"maxLength": 20
+				},
+				"top": {
+					"type": "integer",
+					"default": 0,
+					"minimum": 0,
+					"maximum": 999999999
+				}
+			}
+		}
+	}
+}

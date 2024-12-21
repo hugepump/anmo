@@ -1,0 +1,5 @@
+{
+    "require": {
+        "lpilp/guomi": "^1.0"
+    }
+}
